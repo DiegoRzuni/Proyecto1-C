@@ -1,0 +1,293 @@
+/* Estilos */
+
+body{
+  background-color: #2C728A;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Encabezado */
+
+header{
+  display: flex;
+  min-height: 70px;
+  background:-webkit-linear-gradient(top, #CFCACF, #9A929B);  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo{
+  display:flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav a{
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover{
+  color: white;
+}
+
+@media (max-width:700xp){
+  header{
+    flex-direction: column;
+  }
+
+  nav{
+    padding: 10px 0px;
+  }
+}
+
+/* Carrucel */
+
+#conteitemscarrusel{
+  height: 300px;
+  width: 530px;
+  overflow: hidden;
+  margin-left: 450px;
+  margin-top: 20px;
+
+}
+
+.item-carrusel{
+  height: 100%;
+  position: relative;
+}
+
+.tarjetacarrusel{
+  height: 100%;
+}
+
+.flechacarrusel{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#tarjetacarrusel-1{
+  background-color: purple;
+}
+
+#tarjetacarrusel-2{
+  background-color: blue;
+}
+
+#tarjetacarrusel-3{
+  background-color: skyblue;
+}
+
+#contepuntos{
+  background:-webkit-linear-gradient(top, #CFCACF, #9A929B);  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding : 15px;
+  height:10px;
+  width: 500px;
+  margin-left: 450px;
+
+
+}
+
+#contepuntos > a{
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+#imgcarrucel{
+  height: 100%;
+  width: 100%;
+}
+
+i{
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+
+}
+
+/* Tarjetas */
+
+.card{
+background-color: white;
+border-radius: 10px;
+margin-left: 110px;
+font-style: italic;
+margin-top: 80px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 0px;
+display: inline-block;
+}
+
+.card-img-top{
+  height: 200px;
+  width: 290px;
+  border-radius: 10px;
+}
+
+/* Pie de pagina */
+
+.pie-pagina{
+  width: 100%;
+  background-color: #0a141d;
+  margin-top: 40px
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color: black;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: skyblue;
+}
+
+.pie-pagina .grupo-2{
+  background-color: #2C728A;
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+}
+
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+.login-box{
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login-box .avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.login-box a{
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: #738084;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 20px 50px ;
+  margin-left: 20%;
+}
+
+.login-box a:hover{
+  color: white;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio de secion</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <center>
+		<font face="Verdana" size="12" color="blue">Capitulos</font>
+		<table border="0"></table>
+		<br>
+		<br>
+
+		<tr>
+			<td>Nombre Pelicula</td>
+			<td><input type="text" name="nompeli"></td>
+		</tr>
+		<br>
+		<tr>
+			<td>Cantidad de capitulos</td>
+			<td><input type="number" name="nomcap"></td>
+
+		</tr>
+		<br>
+		<tr>
+			<td>cantidad de temporadas</td>
+			<td><input type="number" name="nomtem"></td>
+		</tr>
+		<br>
+		<input type="submit" name="btncompra" value="Enviar">
+	</center>
+
+
+
+
+  </body>
+</html>
